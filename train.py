@@ -24,6 +24,9 @@ import time
 from copy import deepcopy
 from datetime import datetime, timedelta
 from pathlib import Path
+import git
+
+os.environ["GIT_PYTHON_REFRESH"] = "quiet"
 
 try:
     import comet_ml  # must be imported before torch (if installed)
